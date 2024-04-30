@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Employee Payroll Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Employee Payroll Tracker</h1>
+    </header>
+    <div class="card">
+      <div class="card-header">
+        <h2>Employee Roster</h2>
+      </div>
+      <div class="card-body">
+        <table>
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+          <tbody id="employee-table">
+          </tbody>
+        </table>
+      </div>
+      <div class="card-footer">
+        <label>Employee's First Name:</label>
+        <input type="text" id="EmployeeFirstName" placeholder="Enter Employee's First Name" /><br>
+        <label>Employee's Last Name:</label>
+        <input type="text" id="EmployeeLastName" placeholder="Enter Employee's Last Name" /><br>
+        <label class="label">Employee's Salary:</label>
+        <input type="text" id="EmployeeSalary" placeholder="Enter Employee's Salary" /><br>
+        <button id="add-employees-btn" class="btn">Add Employees</button>
+        <button id="display-employees-btn" class="btn">Display Employees</button>
+        <button id="get-salary-average" class="btn">Average Of Salaries!</button>
+      </div>
+      <h2 id="average"></h2>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
